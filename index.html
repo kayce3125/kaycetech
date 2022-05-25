@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+<title>KayceTech</title>
+<link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <img src="image/logo.png" a href="/" id="navbar__logo"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">Home </a>
+            </li>
+            <li class="navbar__item">
+                <a href="tech.html" class="navbar__links">Blog </a>
+            </li>
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">Portfolio </a>
+            </li>
+            <li class="navbar__btn">
+                <a href="/" class="button">CONTACT US </a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="main" id="body1">
+        <div class="main__container">
+            <div class="content">
+                <div class="main__img__container">
+                <img style="right: float; right:80px; " src="image/undraw1.png" class="image">
+                <h1 id="head1">ALL WEB DIGITAL SOLUTION</h1>
+                <h2 id="h22">We Build Beautiful, Clean & Modern Design website with flexible and responsive components.</h2>
+                    <br>
+                    <br>
+                <h2 id="h2main">OUR SERVICES</h2>
+                <br>
+                <center> <p id="P11">  WEB DESIGN  </p></center>
+               <p>Your design has to be as simple to use as it is helpful and insightful. In the dozen years we've been in this industry, we've gained a thorough understanding of the most recent UI and UX trends.</p>
+               <center> <p id="P11">  WEB DESIGN  </p></center>
+               <p>Your design has to be as simple to use as it is helpful and insightful. In the dozen years we've been in this industry, we've gained a thorough understanding of the most recent UI and UX trends.</p>
+
+
+
+                
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body> 
+
+
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?9080';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginLeft":"50",
+      "position":"left"
+  },
+  "brandSetting":{
+      "brandName":"KayceTech",
+      "brandSubTitle":"Typically replies within a day",
+      "brandImg":"https://i.ibb.co/HPLhBXF/2KAYCE.png",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about {{page_link}}",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"2349066073100"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+
+
+</html>
